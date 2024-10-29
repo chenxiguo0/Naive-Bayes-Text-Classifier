@@ -13,20 +13,7 @@
     ======================================================= 1 passed in 1.37s ========================================================
 
 ### Problem 2
-#### (A): They are basically the same but there is one discrepency in the prediction for work indexed 6.
-                                custom_predicted_author   sklearn_predicted_author
-                  0                        0                         0
-                  1                        0                         0
-                  2                        0                         0
-                  3                        1                         1
-                  4                        0                         0
-                  5                        0                         0
-                  6                        0                         1
-                  7                        1                         1
-                  8                        1                         1
-                  9                        0                         0
+#### (E): Documents containing 'system': [('3', 1), ('5653', 1), ('1127', 1), ('3319', 3), ('8935', 1), ('2552', 2), ('16515', 1), ('14398', 1), ('16638', 1), ('8772', 2)]
+#### (F): Documents containing 'compatibility': [('14398', 1), ('8772', 1)]
+#### (G): Documents containing both 'system' and 'compatibility': [('14398', 1)]
 
-### Problem 3
-#### (A): Created Naive Bayes: accuracy: 0.8, f1 score: 0.7916666666666666
-####        Scikit-Learn Naive Bayes: acccuracy: 0.9, f1 score: 0.898989898989899
-#### (B): In prediction for Kennedy's work, two classifiers performed both well and made no mistakes. But they both mistakenly assigned some of Johnson's work to Kennedy, though Scikit-Learn Naive Bayes classifier performed better and made fewer mistakes in this.

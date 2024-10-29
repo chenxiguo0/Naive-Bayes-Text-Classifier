@@ -1,7 +1,10 @@
 import argparse
 import pandas as pd
 from nb.nb import NaiveBayes  
-from utils.load_data import build_dataframe
+from nb.utils.load_data import build_dataframe
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '/../..')))
 
 def main():
     # (a) Set up argparse to get the input directory from the user
@@ -14,8 +17,6 @@ def main():
     training_df, test_df = build_dataframe(args.indir)
     print(f"Training DataFrame shape: {training_df.shape}")
     print(f"Test DataFrame shape: {test_df.shape}")
-
-    # Create an instance of your NaiveBayes class
     nb = NaiveBayes(alpha=1.0)
 
     # (c) Train the Naive Bayes model to estimate priors and likelihoods

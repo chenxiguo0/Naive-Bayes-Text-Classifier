@@ -14,6 +14,9 @@
 
 ### Problem 2
 #### (E): Documents containing 'system': [('3', 1), ('5653', 1), ('1127', 1), ('3319', 3), ('8935', 1), ('2552', 2), ('16515', 1), ('14398', 1), ('16638', 1), ('8772', 2)]
+    The search has ignored case sensitivity, ensuring that both "system" and "System" yield results.
 #### (F): Documents containing 'compatibility': [('14398', 1), ('8772', 1)]
+    Like the previous query, case insensitivity was also secured here. In my codes, I avoided stemming 'compatibility' because after stemming it's altered and couldn't be found by searching.
 #### (G): Documents containing both 'system' and 'compatibility': [('14398', 1)]
+    The intersection of results from the two individual queries successfully yielded documents that contain both terms.
 

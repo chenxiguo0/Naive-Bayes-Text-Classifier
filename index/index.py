@@ -66,10 +66,6 @@ def build_index(documents, tokenizer, stem=False):
             else:
                 index[token] = [(doc_id, frequency)]
 
-    #print("Index built:")  # Debugging line
-    #for token, occurrences in index.items():  # Print indexed tokens
-    #    print(f"Token: '{token}', Occurrences: {occurrences}")
-
     return index
 
 # (E-G) 

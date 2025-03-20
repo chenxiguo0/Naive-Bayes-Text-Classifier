@@ -9,19 +9,13 @@ This project implements a Naive Bayes text classifier in Python designed to pred
 
 It contains three key components:
 
-    NaiveBayes Class: Located in nb.py, this class includes methods to train (train) and test (test) the Naive Bayes model.
-    
-    build_dataframe Function: Defined in load_data.py, this utility function loads the text data from specified directories into training and test DataFrames.
-    
-    main.py Script: This is the entry point for running the classifier, using argparse to specify data locations and output predictions.
-    
 1. **NaiveBayes Class**: Located in `nb.py`, this class contains methods to train (`train`) and test (`test`) the Naive Bayes model.
 2. **build_dataframe Function**: Defined in `load_data.py`, this utility function loads text data from specified directories into training and test DataFrames.
 3. **main.py Script**: The entry point for running the classifier, which uses `argparse` to specify the data locations and output predictions.
 
 
 
-Running the Classifier
+## Running the Classifier
 
 Run main.py with a specified data directory containing subfolders for each author. These subfolders should contain text files for training, and there should be a separate unlabeled folder for testing.
 
@@ -31,6 +25,6 @@ And replace /path/to/data with the relative or absolute path to the required dat
 
 The project will output:
 
-    The training data details (priors and likelihoods).
+The training data details (priors and likelihoods).
     
-    The predictions for each test sample, including the text and the predicted author.
+The predictions for each test sample, including the text and the predicted author.

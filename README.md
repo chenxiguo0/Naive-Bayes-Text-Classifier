@@ -1,9 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/pEbqUUJs)
-# fall-2024-assignment-03
 
-Naive Bayes Text Classifier
+# Naive Bayes Text Classifier
 
-This project implements a Naive Bayes classifier in Python to predict authorship based on text data. The classifier is trained on labeled text files, with each author associated with a unique set of text samples. This program tokenizes text by splitting along whitespace and calculates class priors and word likelihoods based on term frequency.
+## Project Overview
+
+This project implements a Naive Bayes text classifier in Python designed to predict authorship based on text data. The classifier is trained on labeled text files, where each author is associated with a unique set of text samples. The program tokenizes text by splitting it along whitespace and calculates class priors and word likelihoods using term frequency.
+
 
 It contains three key components:
     NaiveBayes Class: Located in nb.py, this class includes methods to train (train) and test (test) the Naive Bayes model.
